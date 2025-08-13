@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce App</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center mt-4">E-Commerce App</h1>
+      <div class="container">
+        <form>
+          <div class="form-group">
+            <label for="username">Usuário</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Senha</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form-control"
+              required
+            />
+          </div>
+        </form>
+      </div>
+      <div class="text-center mt-2">
+        <button
+          type="submit"
+          class="btn btn-primary"
+          id="loginButton"
+          onclick="window.location.href='pages/inicio.html'"
+        >
+          Entrar
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary"
+          id="registerButton"
+          onclick="window.location.href='pages/cadastro.html'"
+        >
+          Cadastrar Novo Usuário
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
