@@ -6,9 +6,9 @@ Esse é um projeto para a disciplina de Desenvolvimento Front-End, ministrada pe
 
 ## Contribuintes
 
-Iury Tavares/
-João Paulo Pacheco/
-Lucas Fernandes Silva/
+Iury Tavares\
+João Paulo Pacheco\
+Lucas Fernandes Silva\
 Marcos Vinícius de Souza Oliveira
 
 ## Estrutura do Projeto
