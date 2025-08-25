@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finalização da Compra</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+
+<body>
+    <header class="steam-header">
+        <div class="container">
+            <h1 class="store-title">Resumo da Compra</h1>
+        </div>
+    </header>
+    <main class="store-content">
+        <div class="container mt-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title text-success">Compra realizada com sucesso!</h3>
+                    <hr>
+                    <h5>Produtos Selecionados</h5>
+                    <div id="finalCartItems"></div>
+                    <h5 class="mt-3">Forma de Pagamento</h5>
+                    <p>Bandeira do cartão: <strong id="finalCardBrand"></strong></p>
+                    <p>Parcelamento: <strong id="finalInstallments"></strong></p>
+                    <h5 class="mt-3">Valor Total</h5>
+                    <p><strong id="finalTotal"></strong></p>
+                    <hr>
+                    <p class="text-info">Obrigado por comprar na Steam Games Store! Sua compra foi processada e em breve
+                        você receberá um e-mail com os detalhes.</p>
+                    <div class="text-center mt-4">
+                        <div class="btns-pagamento mt-4">
+                            <a href="inicio.html" class="btn btn-lg btn-loja">Voltar para a loja</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../assets/js/finalizacao.js"></script>
+    </main>
+</body>
+
+</html>

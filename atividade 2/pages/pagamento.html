@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagamento</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+
+<body>
+    <header class="steam-header">
+        <div class="container">
+            <h1 class="store-title">Forma de Pagamento</h1>
+        </div>
+    </header>
+    <main class="store-content">
+        <div class="container">
+            <div class="card mb-4">
+                <div class="card-header bg-info text-white">Itens no Carrinho</div>
+                <div class="card-body" id="cartItems">
+                </div>
+            </div>
+            <form class="mt-4" id="paymentForm">
+                <div class="form-group">
+                    <label for="cardBrand">Bandeira do Cartão</label>
+                    <select class="form-control" id="cardBrand" required>
+                        <option value="Visa">Visa</option>
+                        <option value="Mastercard">Mastercard</option>
+                        <option value="American Express">American Express</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="cardNumber">Número do cartão</label>
+                    <input type="text" class="form-control" id="cardNumber" maxlength="19" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="cardExpiry">Data de Expiração</label>
+                        <input type="text" class="form-control" id="cardExpiry" placeholder="MM/AA" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="cardCVC">Código de Segurança</label>
+                        <input type="text" class="form-control" id="cardCVC" maxlength="4" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="cardName">Nome impresso no cartão</label>
+                    <input type="text" class="form-control" id="cardName" required>
+                </div>
+                <div class="form-group">
+                    <label for="installments">Parcelamento</label>
+                    <select class="form-control" id="installments">
+                        <option value="1">À vista</option>
+                        <option value="2">2x sem juros</option>
+                        <option value="3">3x sem juros</option>
+                        <option value="6">6x sem juros</option>
+                        <option value="12">12x sem juros</option>
+                    </select>
+                </div>
+                <div class="btns-pagamento mt-4">
+                    <button type="submit" class="btn btn-lg btn-success">Finalizar</button>
+                    <button onclick="window.location.href='inicio.html'" class="btn btn-lg btn-loja">Voltar para a
+                        loja</button>
+                </div>
+            </form>
+        </div>
+
+        <script>
+
+        </script>
+    </main>
+    <script src="../assets/js/pagamento.js"></script>
+</body>
+
+</html>

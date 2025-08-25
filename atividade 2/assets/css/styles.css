@@ -1,0 +1,412 @@
+/* Botões de ação lado a lado no desktop, empilhados no mobile */
+.btns-pagamento {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.btns-pagamento .btn {
+  flex: 1 1 0;
+  min-width: 180px;
+  max-width: 300px;
+  font-size: 1.25rem;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  white-space: normal;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s;
+}
+.btn-loja {
+  background-color: #2986cc;
+  color: #fff;
+  border: none;
+}
+.btn-loja:hover {
+  background-color: #1b2838;
+  color: #fff;
+}
+.btn-success {
+  background-color: #90ba3c;
+  border: none;
+  color: #fff;
+}
+.btn-success:hover {
+  background-color: #7a9f35;
+  color: #fff;
+}
+.btn-lg.btn-warning, .btn-lg.btn-primary {
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  padding: 0.75rem 2rem;
+  white-space: normal;
+}
+@media (max-width: 768px) {
+  .btns-pagamento {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .btns-pagamento .btn {
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+.header-actions .btn.btn-outline-light {
+  background-color: #ff4c4c;
+  color: #fff;
+  border-color: #ff4c4c;
+}
+.header-actions .btn.btn-outline-light:hover {
+  background-color: #d32f2f;
+  color: #fff;
+  border-color: #d32f2f;
+}
+body {
+  background-color: #F8F9FA;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px 25px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+h1, h2 {
+  text-align: center;
+  color: #343A40;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+label {
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 6px;
+  display: block;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 6px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  background: #f8fafc;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+  display: block;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  background: #fff;
+}
+
+button,
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;
+  font-size: 1.08rem;
+  font-weight: 600;
+  margin: 8px 10px 0 0;
+  transition: background 0.2s;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+button.btn-secondary {
+  background-color: #6c757d;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+button.btn-secondary:hover {
+  background-color: #495057;
+}
+
+.row-flex {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+}
+
+.col-flex {
+  flex: 1;
+  min-width: 0;
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 12px 5px;
+  }
+  .row-flex {
+    flex-direction: column;
+    gap: 0;
+  }
+  button,
+  input[type="submit"] {
+    width: 100%;
+    margin: 8px 0 0 0;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-2 {
+  margin-top: 1rem;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
+
+
+/* estilos da loja */
+.steam-header {
+  background: linear-gradient(135deg, #1b2838 0%, #2a475e 100%);
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.store-title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.store-content {
+  background-color: #1b2838;
+  min-height: calc(100vh - 80px);
+  padding: 2rem 0;
+}
+
+.search-section {
+  margin-bottom: 2rem;
+}
+
+.search-input {
+  background-color: #2a475e;
+  border: 1px solid #495a6b;
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.75rem;
+}
+
+.search-input::placeholder {
+  color: #8ba4b8;
+}
+
+.search-input:focus {
+  background-color: #344654;
+  border-color: #66c0f4;
+  color: white;
+  box-shadow: 0 0 0 0.2rem rgba(102, 192, 244, 0.25);
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.game-card {
+  background: linear-gradient(135deg, #2a475e 0%, #1e3a52 100%);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border: 1px solid #495a6b;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.game-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #495a6b;
+}
+
+.game-info {
+  padding: 1rem;
+  color: white;
+}
+
+.game-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #66c0f4;
+}
+
+.game-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #90ba3c;
+  margin-bottom: 0.5rem;
+}
+
+.game-description {
+  font-size: 0.9rem;
+  color: #c7d5e0;
+  margin-bottom: 0.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.game-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.rating-badge {
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.rating-very-positive {
+  background-color: #4c6b22;
+  color: #beee11;
+}
+
+.rating-mostly-positive {
+  background-color: #4c6b22;
+  color: #a4c639;
+}
+
+.rating-mixed {
+  background-color: #a26426;
+  color: #d2b48c;
+}
+
+.rating-overwhelmingly-positive {
+  background-color: #4c6b22;
+  color: #beee11;
+}
+
+.game-details {
+  font-size: 0.8rem;
+  color: #8ba4b8;
+}
+
+.modal-content {
+  background-color: #2a475e;
+  color: white;
+  border: none;
+}
+
+.modal-header {
+  border-bottom: 1px solid #495a6b;
+}
+
+.modal-footer {
+  border-top: 1px solid #495a6b;
+}
+
+.btn-outline-light:hover {
+  background-color: #66c0f4;
+  border-color: #66c0f4;
+}
+
+.btn-success {
+  background-color: #90ba3c;
+  border-color: #90ba3c;
+}
+
+.btn-success:hover {
+  background-color: #7a9f35;
+  border-color: #7a9f35;
+}
+
+.loading {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  padding: 2rem;
+}
+
+.loading::after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #66c0f4;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 1s ease-in-out infinite;
+  margin-left: 10px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+  .games-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .header-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .store-title {
+    font-size: 1.5rem;
+  }
+  
+  .search-section .row > div {
+    margin-bottom: 1rem;
+  }
+}
+

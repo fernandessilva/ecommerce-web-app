@@ -1,31 +1,72 @@
 # E-commerce Web App
 
-## Visão Geral
+Este projeto é um protótipo de loja online inspirado na Steam, dividido em duas atividades principais:
 
-Esse é um projeto para a disciplina de Desenvolvimento Front-End, ministrada pelo Prof. Msc. Reinaldo de Souza Júnior, no Programa de Residência em TI do TJGO em parceria com a UFG. Essa é uma aplicação que simula um e-commerce com uma tela de login e de cadastro. Esse aplicativo é desenvolvido utilizando HTML, CSS (bootstrap: https://bootsnipp.com/snippets/M2X) e JavaScript puro.
+## Atividade 1
 
-## Contribuintes
+Cadastro de usuário simples, com validação básica e redirecionamento.
 
-Iury Tavares\
-João Paulo Pacheco\
-Lucas Fernandes Silva\
-Marcos Vinícius de Souza Oliveira
+**Arquivos principais:**
 
-## Estrutura do Projeto
+- `index.html`: Página inicial de cadastro
+- `assets/css/styles.css`: Estilos da página
+- `pages/cadastro.html`: Página de cadastro
+- `pages/inicio.html`: Página inicial após cadastro
 
-```
-ecommerce-web-app
-├── assets
-│   └── css
-│       └── styles.css
-├── pages
-│   ├── inicio.html
-│   └── cadastro.html
-├── index.html
-└── README.md
-```
+## Atividade 2
 
-## Instruções
+Loja virtual de games, com grid de produtos, busca, filtro, modal de detalhes, carrinho, pagamento e finalização.
 
-1. Clone o repositório na sua máquina localmente.
-2. Abra o arquivo `index.html` no seu navegador para inciar a aplicação.
+**Arquivos principais:**
+
+- `index.html`: Login
+- `pages/inicio.html`: Loja de games
+- `pages/pagamento.html`: Página de pagamento
+- `pages/finalizacao.html`: Finalização da compra
+- `assets/css/styles.css`: Estilos visuais e responsivos
+- `assets/js/games.js`: Lógica da loja
+- `assets/js/pagamento.js`: Lógica de pagamento
+- `assets/js/finalizacao.js`: Lógica de finalização
+- `utils/artworks/`: Imagens das capas dos jogos
+
+## Como executar
+
+1. Abra o arquivo `index.html` de cada atividade em seu navegador.
+2. Siga o fluxo de cadastro (Atividade 1) ou login e navegação na loja (Atividade 2).
+3. Adicione jogos ao carrinho, finalize a compra e revise o pedido.
+
+## Tecnologias utilizadas
+
+- HTML5
+- CSS3 (com Bootstrap 4.5.2)
+- JavaScript (ES6)
+- LocalStorage
+
+## Observações
+
+- Projeto totalmente front-end, sem backend.
+- Imagens dos jogos em `utils/artworks/`.
+- Layout responsivo para desktop e mobile.
+
+---
+
+## Resumo das atividades
+
+### Atividade 1
+
+Cadastro de Usuário
+
+- Página de cadastro simples
+- Validação básica de campos
+- Redirecionamento para página inicial
+
+### Atividade 2
+
+Loja Virtual de Games
+
+- Grid de jogos com busca e filtro
+- Modal de detalhes do jogo
+- Carrinho de compras
+- Página de pagamento com opções de parcelamento
+- Página de finalização com resumo do pedido
+- Layout responsivo e visual inspirado na Steam
