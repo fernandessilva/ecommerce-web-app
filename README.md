@@ -48,6 +48,15 @@ Loja virtual de games, com grid de produtos, busca, filtro, modal de detalhes, c
 - Imagens dos jogos em `utils/artworks/`.
 - Layout responsivo para desktop e mobile.
 
+## Atividade 3
+
+Declaração de funções em JavaScript
+
+**Arquivos principais:**
+
+- `index.html`: Página principal HTML
+- `scripts.js`: Lógica
+
 ---
 
 ## Resumo das atividades
@@ -70,3 +79,9 @@ Loja Virtual de Games
 - Página de pagamento com opções de parcelamento
 - Página de finalização com resumo do pedido
 - Layout responsivo e visual inspirado na Steam
+
+### Atividade 3
+
+Atividades propostas
+
+- Funções que calculam média de duas notas, calculam idade de acordo com o ano de nascimento, verificam se um numero digitado é par ou ímpar e exibem a tabuada de um número digitado
