@@ -2,25 +2,31 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Atividade 3</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
     <h1>Atividade 3</h1>
     <div id="calculo-media">
         <h3>Calculo de média</h3>
-        <input type="number" id="nota1" placeholder="Nota 1" required>
-        <input type="number" id="nota2" placeholder="Nota 2" required>
+        <div>
+            <input type="text" id="nome-aluno" placeholder="Nome do Aluno" />
+        </div>
+        <div>
+            <input type="text" id="nome-disciplina" placeholder="Nome da Disciplina" />
+        </div>
+        <div><input type="number" id="nota1" placeholder="Nota 1" /></div>
+        <div><input type="number" id="nota2" placeholder="Nota 2" /></div>
         <button onclick="calcularMedia()">Calcular Média</button>
         <div id="resultado"></div>
     </div>
 
-
     <div id="calculo-idade">
         <h3>Calculo de idade</h3>
-        <input type="number" id="ano-nascimento" placeholder="Ano de Nascimento" required>
+        <input type="number" id="ano-nascimento" placeholder="Ano de Nascimento" />
         <button onclick="calcularIdade()">Calcular Idade</button>
         <div id="resultado-idade"></div>
     </div>
@@ -28,14 +34,14 @@
 
     <div id="par-impar">
         <h3>Par ou Ímpar</h3>
-        <input type="number" id="numero" placeholder="Digite um número" required>
+        <input type="number" id="numero" placeholder="Digite um número" />
         <button onclick="verificarParImpar()">Verificar</button>
         <div id="resultado-par-impar"></div>
     </div>
 
     <div id="tabuada">
         <h3>Tabuada</h3>
-        <input type="number" id="numero-tabuada" placeholder="Digite um número" required>
+        <input type="number" id="numero-tabuada" placeholder="Digite um número" />
         <button onclick="gerarTabuada()">Gerar Tabuada</button>
         <div id="resultado-tabuada"></div>
     </div>
