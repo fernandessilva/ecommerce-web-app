@@ -1,6 +1,15 @@
 # E-commerce Web App
 
-Este projeto é um protótipo de loja online inspirado na Steam, dividido em duas atividades principais:
+## Visão Geral
+
+Esse é um projeto para a disciplina de Desenvolvimento Front-End, ministrada pelo Prof. Msc. Reinaldo de Souza Júnior, no Programa de Residência em TI do TJGO em parceria com a UFG. Essa é uma aplicação que simula um e-commerce com uma tela de login e de cadastro. Esse aplicativo é desenvolvido utilizando HTML, CSS (bootstrap: https://bootsnipp.com/snippets/M2X) e JavaScript puro.
+
+## Contribuintes
+
+Iury Tavares\
+João Paulo Pacheco\
+Lucas Fernandes Silva\
+Marcos Vinícius de Souza Oliveira
 
 ## Atividade 1
 
