@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Calculadora</h1>
+    <form id="calculadora">
+        <!-- aqui nos campos de input podemos passar uma propriedade required para validação, mas optamos por deixar o texto destacado -->
+        <input type="number" id="numero1" placeholder="Número 1" step="any">
+        <select id="operacao">
+            <option value="add">Adicionar (+)</option>
+            <option value="sub">Subtrair (-)</option>
+            <option value="mult">Multiplicar (×)</option>
+            <option value="div">Dividir (÷)</option>
+        </select>
+        <input type="number" id="numero2" placeholder="Número 2" step="any">
+        <button type="submit">Calcular</button>
+    </form>
+    <div id="result"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Calculadora de IMC</h1>
+    <form id="calculadora-imc">
+        <label for="altura">Altura (CM):</label>
+        <input type="number" id="altura" placeholder="Altura sem vírgula">
+        <br>
+        <label for="peso">Peso (KG):</label>
+        <input type="number" id="peso" placeholder="Peso em quilos">
+        <br>
+        <div class="btn">
+            <button type="submit" id="calcular">Calcular IMC</button>
+            <button type="reset" id="limpar">Limpar</button>
+        </div>
+    </form>
+    <div id="result"></div>
+    <div id="info">
+        <h2>Informações sobre o IMC</h2>
+        <p>O que é o IMC?</p>
+        <p>O IMC é uma fórmula que utiliza o peso e a altura de alguém para verificar se esse indivíduo se encontra em
+            seu peso ideal — ou seja, saudável.</p>
+        <h2>A tabela do IMC é a seguinte:</h2>
+        <ul>
+            <li>resultados menores que 16 — magreza grave;</li>
+            <li>resultados entre 16 e 16,9 — magreza moderada;</li>
+            <li>resultados entre 17 e 18,5 — magreza leve;</li>
+            <li>resultados entre 18,6 e 24,9 — peso ideal;</li>
+            <li>resultados entre 25 e 29,9 — sobrepeso;</li>
+            <li>resultados entre 30 e 34,9 — obesidade grau I;</li>
+            <li>resultados entre 35 e 39,9 — obesidade grau II ou severa;</li>
+            <li>resultados maiores do que 40 — obesidade grau III ou mórbida.</li>
+        </ul>
+        <h2>Como fazer o cálculo do IMC?</h2>
+        <p>Fazer o cálculo do IMC é bem fácil. Primeiro, você vai multiplicar o valor de sua altura (em metros) por ele
+            mesmo. Por exemplo, se você medir 1,60 metros, o cálculo será:</p>
+        <p>1,6 x 1,6 = 2,56</p>
+        <p>Em seguida, é hora de trazer o seu peso para a equação. Ele deverá ser dividido pelo valor obtido acima.
+            Pensando no mesmo exemplo anterior, se o seu peso for 60 quilos, a conta será:</p>
+        <p>60 ÷ 2,56 = 23,43</p>
+        <p>Essa pessoa, portanto, tem um IMC considerado como sobrepeso.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
